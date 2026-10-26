@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --canvas-dot: #1f2937;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-paper text-ink antialiased;
+}
+
+.react-flow__attribution {
+  display: none;
+}
+
+.react-flow__node {
+  position: absolute !important;
+  pointer-events: all !important;
+}
+
+.react-flow__viewport {
+  transform-origin: 0 0 !important;
+}
+
+.pdf-hl {
+  background: #fde68a;
+  color: inherit;
+  border-radius: 2px;
+}
+
+mark.pdf-hl {
+  background: #fde68a;
+  padding: 0 1px;
+}
+
+.rf-canvas {
+  background-color: #f6f3ee;
+  background-image: radial-gradient(circle, #d6d3cd 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+.react-flow__controls {
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.react-flow__controls-button {
+  background: #fff;
+  border-bottom: 1px solid #e2e8f0;
+  fill: #334155;
+}
+
+.react-flow__controls-button:hover {
+  background: #f8fafc;
+}
+
+.react-flow__edge-textbg {
+  fill: #f6f3ee;
+}
+
+input[type="range"] {
+  accent-color: #0f766e;
+}
+
+pre.wrap {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.scroll-thin::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scroll-thin::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 99px;
+}
+
+.inspector-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}

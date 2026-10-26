@@ -1,0 +1,34 @@
+# Secrets — never commit real keys
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+.claude/
+.cursor/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.python-version
+
+# Local app data (uploaded reports + SQLite traces)
+backend/data/*
+!backend/data/.gitkeep
+backend/uploads/*
+!backend/uploads/.gitkeep
+*.db
+
+# Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.next/
+frontend/out/
+*.tsbuildinfo
+.turbo/
